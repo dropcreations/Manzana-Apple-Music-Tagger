@@ -3,9 +3,9 @@
 A python script to fetch credits info from apple music about albums and songs and tag FLAC and M4A files using those credits info.
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dropcreations/Apple-Music-Tagger/main/Assets/logo_for_dark.png">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dropcreations/Apple-Music-Tagger/main/Assets/logo_for_light.png">
-<img alt="Apple Music" src="https://raw.githubusercontent.com/dropcreations/Apple-Music-Tagger/main/Assets/logo_for_light.png">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dropcreations/Apple-Music-Tagger/main/Assets/logo-in-dark.png">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dropcreations/Apple-Music-Tagger/main/Assets/logo-in-light.png">
+<img alt="Apple Music" src="https://raw.githubusercontent.com/dropcreations/Apple-Music-Tagger/main/Assets/logo-in-light.png">
 </picture>
 
 ## __Features__
