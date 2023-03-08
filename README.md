@@ -3,4 +3,6 @@ A python script to fetch credits info from apple music about albums and songs an
 
 # Usage
 
-`python apple-tagger.py -h|--help`
+```
+python apple-tagger.py -h|--help
+```
