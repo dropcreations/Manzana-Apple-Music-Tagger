@@ -1,0 +1,7 @@
+requests
+m3u8
+mutagen
+colorama
+prettytable
+xmltodict
+sanitize-filename
