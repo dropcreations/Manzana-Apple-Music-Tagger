@@ -19,7 +19,7 @@ A python script to fetch credits info from apple music about albums and songs an
 
 ### __# for all users__
 
-First of all clone this projector download the project as a zip file and extract it to your pc.
+First of all clone this project or download the project as a zip file and extract it to your pc.
 
 ```
 git clone https://github.com/dropcreations/Apple-Music-Tagger.git && cd Apple-Music-Tagger
