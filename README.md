@@ -16,6 +16,11 @@ A python script to fetch credits info from apple music about albums, songs and m
 - Saves time-synced lyrics if you have an Apple Music subscription
 - Also tags the lyrics to the media file if available
 
+## __Required__
+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp/releases)
+- [mp4box](https://github.com/gpac/gpac)
+
 ## __How to use?__
 
 ### __# for all users__
