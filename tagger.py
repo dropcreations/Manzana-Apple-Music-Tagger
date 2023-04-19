@@ -1,6 +1,7 @@
 import os
 from loggings import Logger
 from mutagen.mp4 import MP4, MP4Cover
+from sanitize_filename import sanitize
 
 logger = Logger("FileTagger")
 
@@ -51,11 +52,11 @@ def tag(file, info, coverFile, noSync=False):
         track_no = str(info.get("trackNumber")).zfill(2)
         track_name = info.get("trackName")
         logger.info(f'Renaming "{file}" ──> "{track_no} - {track_name}.m4a"...')
-        os.rename(file, f"{track_no} - {track_name}.m4a")
+        os.rename(file, sanitize(f"{track_no} - {track_name}.m4a"))
         if not noSync:
-            if "timeSyncedLyrics" in info: save_synced_lyrics(info.get("timeSyncedLyrics"), f"{track_no} - {track_name}.lrc")
+            if "timeSyncedLyrics" in info: save_synced_lyrics(info.get("timeSyncedLyrics"), sanitize(f"{track_no} - {track_name}.lrc"))
             else: logger.warning("No time-synced lyrics found!")
     elif info.get("type") == "music-video":
         track_artist = ", ".join(info.get("trackArtist"))
         track_name = info.get("trackName")
-        os.rename(file, f"{track_artist} - {track_name}.mp4")
+        os.rename(file, sanitize(f"{track_artist} - {track_name}.mp4"))
