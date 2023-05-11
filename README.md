@@ -148,7 +148,7 @@ python manzana.py --no-sync-lrc [album or song url]
 
 Hi, I'm Dinitha. You might recognize me as GitHub's [dropcreations](https://github.com/dropcreations).
 
-__Other usefull python scripts done by me__
+__Other useful python scripts done by me__
 
 | Project        | Github location                                |
 |----------------|------------------------------------------------|
