@@ -3,9 +3,9 @@
 A python script to fetch credits info from apple music about albums, songs and music-videos and tag MP4 and M4A files using those credits info.
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dropcreations/Manzana-Apple-Music-Tagger/main/Assets/logo-in-dark.png">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dropcreations/Manzana-Apple-Music-Tagger/main/Assets/logo-in-light.png">
-<img alt="Apple Music" src="https://raw.githubusercontent.com/dropcreations/Manzana-Apple-Music-Tagger/main/Assets/logo-in-light.png">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dropcreations/Manzana-Apple-Music-Tagger/main/assets/manzana__dark.png">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dropcreations/Manzana-Apple-Music-Tagger/main/assets/manzana__light.png">
+<img alt="Apple Music" src="https://raw.githubusercontent.com/dropcreations/Manzana-Apple-Music-Tagger/main/assets/manzana__light.png">
 </picture>
 
 ## __Features__
