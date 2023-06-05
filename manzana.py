@@ -29,7 +29,7 @@ LOGO = r"""
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Manzana: Apple Music Downloader"
+        description="Manzana: Apple Music Tagger"
     )
     parser.add_argument(
         '-sc',
