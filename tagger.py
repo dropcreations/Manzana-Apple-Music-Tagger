@@ -10,7 +10,7 @@ logger = Logger("Manzana")
 def tag(media, data, noLrc=False, mediaUserToken=False):
     if data.get("type") == 1:
         name = str(data.get("tracknumber")).zfill(2) + ' - ' + data.get("track")
-    else: name = ', '.join(data.get("trackartist")) + ' - ' + data.get("track")
+    else: name = data.get("trackartist") + ' - ' + data.get("track")
 
     tags = MP4(media)
     tags.delete()
@@ -38,6 +38,10 @@ def tag(media, data, noLrc=False, mediaUserToken=False):
         "----:com.apple.itunes:UPC": data.get("upc"),
         "----:com.apple.itunes:Lyricist": data.get("songwriter"),
     }
+
+    if data.get("type") == 6:
+        del __tags["trkn"]
+        del __tags["disk"]
 
     for key, value in __tags.items():
         if value:
