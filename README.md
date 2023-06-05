@@ -11,7 +11,7 @@ A python script to fetch credits info from apple music about albums, songs and m
 ## __Features__
 
 - Can tag an album or a single track or a music-video
-- Tags and saves artworks
+- Embeds and saves artworks
 - Saves animated artworks if available
 - Saves time-synced lyrics if you have an Apple Music subscription
 - Also tags the lyrics to the media file if available
@@ -37,7 +37,13 @@ Install required modules for python (use `pip3` if `pip` doesn't work for you)
 pip install -r requirements.txt
 ```
 
-You have to ready your files for tagging. So, if you are tagging a complete album you must have the tracks in M4A format (with AAC or ALAC codec) and then rename each file as `1, 2, 3,...` respectively to the order of tracks in Apple Music. For an example, assume you have an album called __"Doja Cat - Planet Her"__ in __M4A__ format and they are currently renamed as below
+Now you have to run `init` command to get things ready.
+
+```
+python manzana.py init
+```
+
+Then you have to ready your files for tagging. So, if you are tagging a complete album you must have the tracks in M4A format (with AAC or ALAC codec) and then rename each file as `1, 2, 3,...` respectively to the order of tracks in Apple Music. For an example, assume you have an album called __"Doja Cat - Planet Her"__ in __M4A__ format and they are currently renamed as below
 
 ```
 Doja Cat - Planet Her (https://music.apple.com/us/album/planet-her/1573475827)
@@ -104,32 +110,33 @@ python manzana.py --animated [album or song url]
 Get help using `-h` or `--help` command
 
 ```
-usage: manzana.py [-h] [-sp {2,3}] [-an] [-cn] [-ln] [-p PATH] url
+usage: manzana.py [-h] [-sc {2,3}] [-an] [-oc] [-cn] [-ln] [-p PATH] url
 
-Manzana: Apple Music albums, songs, music-videos tagger
+Manzana: Apple Music Tagger
 
 positional arguments:
-  url                               URL from Apple Music for a album, song or music-video
+  url                               Apple Music URL
 
 optional arguments:
-  -h, --help                        Show this help message and exit
-  -sp {2,3}, --sync-points {2,3}    Miliseconds point count in synced lyrics
+  -h, --help                        show this help message and exit
+  -sc {2,3}, --sync {2,3}           Timecode's ms point count in synced lyrics
   -an, --animated                   Download the animated artwork if available
+  -oc, --original                   Save original artwork as external cover
   -cn, --no-cache                   Don't look for cache
-  -ln, --no-sync-lrc                Don't save synced lyrics as a '.lrc'
+  -ln, --no-lrc                     Don't save synced lyrics as a .lrc file
   -p PATH, --path PATH              Folder or file path for media
 ```
 
 ### __# for subscribed users__
 
-Get your Apple Music cookies from web browser and paste it in `./config/cookies` folder.
+Get your Apple Music cookies from web browser and paste it in `./cookies` folder.
 Doesn't matter if cookies in `.txt` or `.json` format, both are accepted.
 You need to add cookies to get `lyricist` and `lyrics` and also to save `time-synced-lyrics` as a `.lrc` file.
 
-When saving time synced lyrics, timestamps are in `00:00.000` format. If you want to get it in `00:00.00` format set `--sync-points` as `2` as below
+When saving time synced lyrics, timestamps are in `00:00.000` format. If you want to get it in `00:00.00` format set `--sync` as `2` as below
 
 ```
-python manzana.py --sync-points 2 [album or song url]
+python manzana.py --sync 2 [album or song url]
 ```
 
 If you don't want to use the previous cache, use `--no-cache` argument.
@@ -138,10 +145,10 @@ If you don't want to use the previous cache, use `--no-cache` argument.
 python manzana.py --no-cache [album or song url]
 ```
 
-If you don't want to get time synced lyrics as `.lrc` file, use `--no-sync-lrc` argument.
+If you don't want to get time synced lyrics as `.lrc` file, use `--no-lrc` argument.
 
 ```
-python manzana.py --no-sync-lrc [album or song url]
+python manzana.py --no-lrc [album or song url]
 ```
 
 ## About me
@@ -159,4 +166,4 @@ __Other useful python scripts done by me__
 
 <br>
 
-- __NOTE: If you found any issue using this script mention in issues section__
+- __NOTE: If you found any issue using this script, mention in issues section__
