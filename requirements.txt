@@ -1,0 +1,8 @@
+lxml
+rich
+m3u8
+mutagen
+requests
+colorama
+beautifulsoup4
+sanitize-filename
