@@ -1,8 +1,0 @@
-requests
-lxml
-m3u8
-mutagen
-colorama
-prettytable
-beautifulsoup4
-sanitize-filename
