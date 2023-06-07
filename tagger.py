@@ -57,7 +57,7 @@ def tag(media, data, noLrc=False, mediaUserToken=False):
             if mediaUserToken:
                 if "timeSyncedLyrics" in data:
                     logger.info("Saving time-synced lyrics...")
-                    with open(f"{name}.lrc", "w") as l:
+                    with open(f"{name}.lrc", "w", encoding="utf-8") as l:
                         l.write('\n'.join(data.get("timeSyncedLyrics")))
                 else: logger.warning("Unable to find time-synced lyrics!")
     
