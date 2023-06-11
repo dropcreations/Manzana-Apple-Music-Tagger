@@ -97,7 +97,7 @@ python manzana.py --path [file_path] [song_url]
 If you want to get animated cover if available, use `--animated` or `-an` argument
 
 ```
-python manzana.py --an [album or song url]
+python manzana.py -an [album or song url]
 ```
 
 Get help using `-h` or `--help` command
@@ -177,4 +177,4 @@ __Other useful python scripts done by me__
 
 <br>
 
-- __NOTE: If you found any issue using this script, mention in issues section__
+- __NOTE: If you found any issue using this program, mention in issues section__
