@@ -1,4 +1,4 @@
-# __Manzana-Apple-Music-Tagger__
+# __Manzana Apple Music Tagger__
 
 A python program to fetch credits info from apple music about albums, songs and music-videos and tag MP4 and M4A files using those credits info.
 
