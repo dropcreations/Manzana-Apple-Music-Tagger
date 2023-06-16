@@ -123,19 +123,19 @@ optional arguments:
 
 Get your Apple Music cookies from web browser and search for `media-user-token` and get it.
 
-```
-.apple.com	      TRUE	/	FALSE	0	          geo	                          ##
-.apple.com	      TRUE	/	TRUE	0	          dslang	                      ##-##
-.apple.com	      TRUE	/	TRUE	0	          site	                        ###
-.apple.com	      TRUE	/	TRUE	0	          myacinfo	                    #####...
-.music.apple.com	TRUE	/	TRUE	1680758167	commerce-authorization-token	#####...
-.apple.com	      TRUE	/	FALSE	1715317057	itspod	                      ##
-.music.apple.com	TRUE	/	TRUE	1681361859	media-user-token	            #####...
-.music.apple.com	TRUE	/	TRUE	1681361859	itre	                        #
-.music.apple.com	TRUE	/	TRUE	1681361859	pldfltcid	                    #####...
-.music.apple.com	TRUE	/	TRUE	1681361859	pltvcid	                      #####...
-.music.apple.com	TRUE	/	TRUE	1681361859	itua	                        ##
-```
+|Domain|Include subdomains|Path|Secure|Expiry|Name|Value
+|---|---|---|---|---|---|---|
+|.apple.com|TRUE|/|FALSE|0|geo|##|
+|.apple.com|TRUE|/|TRUE|0|dslang|##-##|
+|.apple.com|TRUE|/|TRUE|0|site|###|
+|.apple.com|TRUE|/|TRUE|0|myacinfo|#####...|
+|.music.apple.com|TRUE|/|TRUE|1680758167|commerce-authorization-token|#####...|
+|.apple.com|TRUE|/|FALSE|1715317057|itspod|##|
+|.music.apple.com|TRUE|/|TRUE|1681361859|media-user-token|#####...|
+|.music.apple.com|TRUE|/|TRUE|1681361859|itre|#|
+|.music.apple.com|TRUE|/|TRUE|1681361859|pldfltcid|#####...|
+|.music.apple.com|TRUE|/|TRUE|1681361859|pltvcid|#####...|
+|.music.apple.com|TRUE|/|TRUE|1681361859|itua|##|
 
 You need to add `media-user-token` to get `lyricist` and `lyrics` and also to save `time-synced-lyrics` as a `.lrc` file.<br>
 Now you have to run `init` command to enter `media-user-token`.
